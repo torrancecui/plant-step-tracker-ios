@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A46175BD2A119CD8006FF607 /* plant_step_tracker_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175BC2A119CD8006FF607 /* plant_step_tracker_iosApp.swift */; };
-		A46175BF2A119CD8006FF607 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175BE2A119CD8006FF607 /* ContentView.swift */; };
 		A46175C12A119CDA006FF607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C02A119CDA006FF607 /* Assets.xcassets */; };
 		A46175C42A119CDA006FF607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C32A119CDA006FF607 /* Preview Assets.xcassets */; };
 		A46175CE2A119CDA006FF607 /* plant_step_tracker_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175CD2A119CDA006FF607 /* plant_step_tracker_iosTests.swift */; };
 		A46175D82A119CDA006FF607 /* plant_step_tracker_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */; };
 		A46175DA2A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */; };
+		A46175E82A119DEF006FF607 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175E72A119DEF006FF607 /* MainApp.swift */; };
+		A46175EA2A119E57006FF607 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175E92A119E57006FF607 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +35,6 @@
 
 /* Begin PBXFileReference section */
 		A46175B92A119CD8006FF607 /* plant-step-tracker-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plant-step-tracker-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A46175BC2A119CD8006FF607 /* plant_step_tracker_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosApp.swift; sourceTree = "<group>"; };
-		A46175BE2A119CD8006FF607 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A46175C02A119CDA006FF607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46175C32A119CDA006FF607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A46175C92A119CDA006FF607 /* plant-step-tracker-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "plant-step-tracker-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +42,8 @@
 		A46175D32A119CDA006FF607 /* plant-step-tracker-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "plant-step-tracker-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITests.swift; sourceTree = "<group>"; };
 		A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A46175E72A119DEF006FF607 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		A46175E92A119E57006FF607 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +94,8 @@
 		A46175BB2A119CD8006FF607 /* plant-step-tracker-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A46175BC2A119CD8006FF607 /* plant_step_tracker_iosApp.swift */,
-				A46175BE2A119CD8006FF607 /* ContentView.swift */,
+				A46175E62A119DB9006FF607 /* Login */,
+				A46175E72A119DEF006FF607 /* MainApp.swift */,
 				A46175C02A119CDA006FF607 /* Assets.xcassets */,
 				A46175C22A119CDA006FF607 /* Preview Content */,
 			);
@@ -125,6 +125,14 @@
 				A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */,
 			);
 			path = "plant-step-tracker-iosUITests";
+			sourceTree = "<group>";
+		};
+		A46175E62A119DB9006FF607 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A46175E92A119E57006FF607 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46175BF2A119CD8006FF607 /* ContentView.swift in Sources */,
-				A46175BD2A119CD8006FF607 /* plant_step_tracker_iosApp.swift in Sources */,
+				A46175EA2A119E57006FF607 /* LoginView.swift in Sources */,
+				A46175E82A119DEF006FF607 /* MainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

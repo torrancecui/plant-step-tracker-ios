@@ -1,5 +1,5 @@
 //
-//  plant_step_tracker_iosApp.swift
+//  MainApp.swift
 //  plant-step-tracker-ios
 //
 //  Created by Torrance Cui on 5/14/23.
@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct plant_step_tracker_iosApp: App {
+struct MainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
