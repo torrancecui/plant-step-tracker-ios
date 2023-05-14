@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40378722A119FDF00B207A9 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378712A119FDF00B207A9 /* Globals.swift */; };
+		A40378752A11A38500B207A9 /* BrandLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378742A11A38500B207A9 /* BrandLogoView.swift */; };
+		A403787A2A11A5A200B207A9 /* HomeRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378792A11A5A200B207A9 /* HomeRootView.swift */; };
+		A403787C2A11A5BE00B207A9 /* LoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403787B2A11A5BE00B207A9 /* LoginRootView.swift */; };
 		A46175C12A119CDA006FF607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C02A119CDA006FF607 /* Assets.xcassets */; };
 		A46175C42A119CDA006FF607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C32A119CDA006FF607 /* Preview Assets.xcassets */; };
 		A46175CE2A119CDA006FF607 /* plant_step_tracker_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175CD2A119CDA006FF607 /* plant_step_tracker_iosTests.swift */; };
 		A46175D82A119CDA006FF607 /* plant_step_tracker_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */; };
 		A46175DA2A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */; };
 		A46175E82A119DEF006FF607 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175E72A119DEF006FF607 /* MainApp.swift */; };
-		A46175EA2A119E57006FF607 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175E92A119E57006FF607 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A40378712A119FDF00B207A9 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		A40378742A11A38500B207A9 /* BrandLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandLogoView.swift; sourceTree = "<group>"; };
+		A40378792A11A5A200B207A9 /* HomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootView.swift; sourceTree = "<group>"; };
+		A403787B2A11A5BE00B207A9 /* LoginRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootView.swift; sourceTree = "<group>"; };
 		A46175B92A119CD8006FF607 /* plant-step-tracker-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plant-step-tracker-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46175C02A119CDA006FF607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46175C32A119CDA006FF607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +50,6 @@
 		A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITests.swift; sourceTree = "<group>"; };
 		A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A46175E72A119DEF006FF607 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
-		A46175E92A119E57006FF607 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40378732A11A36D00B207A9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A40378742A11A38500B207A9 /* BrandLogoView.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A40378762A11A54D00B207A9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A40378792A11A5A200B207A9 /* HomeRootView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A40378772A11A55200B207A9 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A40378782A11A55E00B207A9 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
 		A46175B02A119CD8006FF607 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +130,13 @@
 		A46175BB2A119CD8006FF607 /* plant-step-tracker-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A40378782A11A55E00B207A9 /* Plant */,
+				A40378772A11A55200B207A9 /* Profile */,
+				A40378762A11A54D00B207A9 /* Home */,
+				A40378732A11A36D00B207A9 /* Styles */,
 				A46175E62A119DB9006FF607 /* Login */,
 				A46175E72A119DEF006FF607 /* MainApp.swift */,
+				A40378712A119FDF00B207A9 /* Globals.swift */,
 				A46175C02A119CDA006FF607 /* Assets.xcassets */,
 				A46175C22A119CDA006FF607 /* Preview Content */,
 			);
@@ -130,7 +171,7 @@
 		A46175E62A119DB9006FF607 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A46175E92A119E57006FF607 /* LoginView.swift */,
+				A403787B2A11A5BE00B207A9 /* LoginRootView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -265,8 +306,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46175EA2A119E57006FF607 /* LoginView.swift in Sources */,
+				A403787C2A11A5BE00B207A9 /* LoginRootView.swift in Sources */,
+				A403787A2A11A5A200B207A9 /* HomeRootView.swift in Sources */,
+				A40378752A11A38500B207A9 /* BrandLogoView.swift in Sources */,
 				A46175E82A119DEF006FF607 /* MainApp.swift in Sources */,
+				A40378722A119FDF00B207A9 /* Globals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
