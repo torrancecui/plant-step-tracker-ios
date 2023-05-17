@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>454626616521-77ut7fnpijrjuavl1r81f98dndnkca9n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.454626616521-77ut7fnpijrjuavl1r81f98dndnkca9n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDXC8liLADkYcjh0SYlLTt6uNHQcBKbiS0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>454626616521</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.torrancecui.plant-step-tracker-ios</string>
+	<key>PROJECT_ID</key>
+	<string>plant-step-tracker-ios</string>
+	<key>STORAGE_BUCKET</key>
+	<string>plant-step-tracker-ios.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:454626616521:ios:562976d32dfebcc908d918</string>
+</dict>
+</plist>

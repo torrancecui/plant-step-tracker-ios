@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct HomeRootView: View {
+    @StateObject var userContext = UserContext()
+    
     var body: some View {
-        Text("HomeRootView")
+        if userContext.isSignedIn {
+            Text("Logged in! This is the HomeRootView")
+        } else {
+            AuthenticationRootView().environmentObject(userContext)
+        }
+        
     }
 }
 
