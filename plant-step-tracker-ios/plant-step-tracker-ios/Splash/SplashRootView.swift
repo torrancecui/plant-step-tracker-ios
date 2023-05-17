@@ -8,22 +8,23 @@
 import SwiftUI
 
 struct SplashRootView: View {
+    @State private var isActive: Bool = false
     var body: some View {
-        VStack{
-            NavigationView {
-                VStack{
+            ZStack {
+                if self.isActive {
+                    AuthenticationRootView()
+                } else {
                     BrandLogoView()
-                    NavigationLink(destination: LoginRootView()) {
-                        Text("Sign in")
-                    }
-                    NavigationLink(destination: CreateAccountRootView()) {
-                        Text("Create account")
+                }
+            }
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.5) {
+                    withAnimation {
+                        self.isActive = true
                     }
                 }
-            }.navigationBarTitle("")
-                .navigationBarHidden(true)
+            }
         }
-    }
 }
 
 struct SplashRootView_Previews: PreviewProvider {

@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct HomeRootView: View {
+    @AppStorage("uid") var userID: String = ""
+    
     var body: some View {
-        Text("HomeRootView")
+        if userID == "" {
+            AuthenticationRootView()
+        } else {
+            Text("Logged in! This is the HomeRootView")
+        }
+        
     }
 }
 

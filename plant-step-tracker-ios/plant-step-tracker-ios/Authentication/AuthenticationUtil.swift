@@ -9,13 +9,15 @@ import Foundation
 
 func isValidPassword(_ password: String) -> Bool {
     
+    // TODO
     // minimum 6 characters long
     // 1 uppercase character
     // 1 special char
     
-    let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
+    // let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
+    // return passwordRegex.evaluate(with: password)
     
-    return passwordRegex.evaluate(with: password)
+    return true
 }
 
 extension String {
