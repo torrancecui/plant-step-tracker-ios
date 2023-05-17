@@ -12,7 +12,8 @@ struct LoginRootView: View {
     @Binding var currentAuthView: String
     @State private var email: String = ""
     @State private var password: String = ""
-    @AppStorage("uid") var userID: String = ""
+    @State private var authenticationError: AuthenticationError = AuthenticationError()
+    @EnvironmentObject var userContext: UserContext
     
     var body: some View {
         VStack{
@@ -36,22 +37,26 @@ struct LoginRootView: View {
             }) {
                 Text("Don't have an account?")
             }
-
+            
             Button(action: {
                 Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
-                    if let error = error {
-                        print(error)
+                    if let loginError = error {
+                        authenticationError.errorMessage = loginError.localizedDescription
+                        authenticationError.showAlert = true
                         return
                     }
                     if let authResult = authResult {
-                        print(authResult.user.uid)
-                        withAnimation {
-                            userID = authResult.user.uid
+                        withAnimation{
+                            userContext.isSignedIn = true
+                            userContext.userID = authResult.user.uid
                         }
+                        print(userContext.userID)
                     }
                 }
             }) {
                 Text("Sign in")
+            }.alert(authenticationError.errorMessage, isPresented: $authenticationError.showAlert) {
+                Button("OK", role: .cancel) { }
             }
         }
     }

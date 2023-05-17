@@ -12,7 +12,8 @@ struct CreateAccountRootView: View {
     @Binding var currentAuthView: String
     @State private var email: String = ""
     @State private var password: String = ""
-    @AppStorage("uid") var userID: String = ""
+    @State private var authenticationError: AuthenticationError = AuthenticationError()
+    @EnvironmentObject var userContext: UserContext
     
     var body: some View {
         VStack{
@@ -49,17 +50,22 @@ struct CreateAccountRootView: View {
             
             Button(action: {
                 Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-                    if let error = error {
-                        print(error)
+                    if let createUserError = error {
+                        authenticationError.errorMessage = createUserError.localizedDescription
+                        authenticationError.showAlert = true
                         return
                     }
                     if let authResult = authResult {
-                        print(authResult.user.uid)
-                        userID = authResult.user.uid
+                        withAnimation{
+                            userContext.isSignedIn = true
+                            userContext.userID = authResult.user.uid
+                        }
                     }
                 }
             }) {
-                Text("Create acount")
+                Text("Create account")
+            }.alert(authenticationError.errorMessage, isPresented: $authenticationError.showAlert) {
+                Button("OK", role: .cancel) { }
             }
         }
     }

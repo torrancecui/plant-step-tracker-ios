@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct HomeRootView: View {
-    @AppStorage("uid") var userID: String = ""
+    @StateObject var userContext = UserContext()
     
     var body: some View {
-        if userID == "" {
-            AuthenticationRootView()
-        } else {
+        if userContext.isSignedIn {
             Text("Logged in! This is the HomeRootView")
+        } else {
+            AuthenticationRootView().environmentObject(userContext)
         }
         
     }

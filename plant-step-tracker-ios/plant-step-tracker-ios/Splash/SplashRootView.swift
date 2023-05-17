@@ -12,7 +12,7 @@ struct SplashRootView: View {
     var body: some View {
             ZStack {
                 if self.isActive {
-                    AuthenticationRootView()
+                    HomeRootView()
                 } else {
                     BrandLogoView()
                 }

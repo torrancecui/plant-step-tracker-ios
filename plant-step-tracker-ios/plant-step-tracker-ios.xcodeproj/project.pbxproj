@@ -23,6 +23,8 @@
 		A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378942A11B63700B207A9 /* HStackAuthStyle.swift */; };
 		A40378992A11BD3100B207A9 /* HuaButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378982A11BD3100B207A9 /* HuaButtonStyle.swift */; };
 		A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */; };
+		A403789D2A148E2100B207A9 /* UserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789C2A148E2100B207A9 /* UserContext.swift */; };
+		A40378A02A1495DC00B207A9 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789F2A1495DC00B207A9 /* AuthenticationError.swift */; };
 		A46175C12A119CDA006FF607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C02A119CDA006FF607 /* Assets.xcassets */; };
 		A46175C42A119CDA006FF607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C32A119CDA006FF607 /* Preview Assets.xcassets */; };
 		A46175CE2A119CDA006FF607 /* plant_step_tracker_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175CD2A119CDA006FF607 /* plant_step_tracker_iosTests.swift */; };
@@ -60,6 +62,8 @@
 		A40378942A11B63700B207A9 /* HStackAuthStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackAuthStyle.swift; sourceTree = "<group>"; };
 		A40378982A11BD3100B207A9 /* HuaButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuaButtonStyle.swift; sourceTree = "<group>"; };
 		A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
+		A403789C2A148E2100B207A9 /* UserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContext.swift; sourceTree = "<group>"; };
+		A403789F2A1495DC00B207A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 		A46175B92A119CD8006FF607 /* plant-step-tracker-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plant-step-tracker-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46175C02A119CDA006FF607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46175C32A119CDA006FF607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -145,11 +149,20 @@
 			isa = PBXGroup;
 			children = (
 				A403787B2A11A5BE00B207A9 /* LoginRootView.swift */,
+				A403789F2A1495DC00B207A9 /* AuthenticationError.swift */,
 				A403788E2A11B0DB00B207A9 /* AuthenticationUtil.swift */,
 				A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */,
 				A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A403789E2A148E2700B207A9 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A403789C2A148E2100B207A9 /* UserContext.swift */,
+			);
+			path = User;
 			sourceTree = "<group>";
 		};
 		A46175B02A119CD8006FF607 = {
@@ -176,6 +189,7 @@
 		A46175BB2A119CD8006FF607 /* plant-step-tracker-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A403789E2A148E2700B207A9 /* User */,
 				A403788D2A11AFD300B207A9 /* Authentication */,
 				A403788C2A11AEC100B207A9 /* Splash */,
 				A40378782A11A55E00B207A9 /* Plant */,
@@ -360,6 +374,7 @@
 				A403787C2A11A5BE00B207A9 /* LoginRootView.swift in Sources */,
 				A403787A2A11A5A200B207A9 /* HomeRootView.swift in Sources */,
 				A40378752A11A38500B207A9 /* BrandLogoView.swift in Sources */,
+				A403789D2A148E2100B207A9 /* UserContext.swift in Sources */,
 				A40378992A11BD3100B207A9 /* HuaButtonStyle.swift in Sources */,
 				A46175E82A119DEF006FF607 /* MainApp.swift in Sources */,
 				A40378722A119FDF00B207A9 /* Globals.swift in Sources */,
@@ -367,6 +382,7 @@
 				A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */,
 				A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */,
 				A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */,
+				A40378A02A1495DC00B207A9 /* AuthenticationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
