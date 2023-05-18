@@ -14,7 +14,6 @@ struct AuthenticationRootView: View {
             LoginRootView(currentAuthView: $currentAuthView)
         } else {
             CreateAccountRootView(currentAuthView: $currentAuthView)
-                .transition(.move(edge: .bottom))
         }
     }
 }

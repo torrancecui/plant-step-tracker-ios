@@ -17,6 +17,7 @@ struct CreateAccountRootView: View {
     
     var body: some View {
         VStack{
+            Spacer()
             BrandLogoView()
             HStack {
                 Image(systemName: "mail")
@@ -47,7 +48,7 @@ struct CreateAccountRootView: View {
             }) {
                 Text("Already have an account?")
             }
-            
+            Spacer()
             Button(action: {
                 Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                     if let createUserError = error {

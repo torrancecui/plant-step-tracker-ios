@@ -6,9 +6,16 @@
 //
 
 import Foundation
+import FirebaseAuth
 
-class UserContext: ObservableObject {
-    // testing personal access token
+class UserContext: NSObject, ObservableObject {
     @Published var userID: String = ""
     @Published var isSignedIn: Bool = false
+    
+    override init() {
+        super.init()
+        if Auth.auth().currentUser != nil {
+            isSignedIn = true
+        }
+    }
 }

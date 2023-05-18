@@ -31,6 +31,7 @@
 		A46175D82A119CDA006FF607 /* plant_step_tracker_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */; };
 		A46175DA2A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */; };
 		A46175E82A119DEF006FF607 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175E72A119DEF006FF607 /* MainApp.swift */; };
+		A4DAB3A52A15D00D00D31D85 /* HomePlantOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		A46175D72A119CDA006FF607 /* plant_step_tracker_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITests.swift; sourceTree = "<group>"; };
 		A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = plant_step_tracker_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A46175E72A119DEF006FF607 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlantOverviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				A40378792A11A5A200B207A9 /* HomeRootView.swift */,
+				A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */,
 				A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */,
 				A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */,
+				A4DAB3A52A15D00D00D31D85 /* HomePlantOverviewView.swift in Sources */,
 				A40378A02A1495DC00B207A9 /* AuthenticationError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
