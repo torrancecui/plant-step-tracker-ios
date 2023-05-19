@@ -126,20 +126,6 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
-		A40378772A11A55200B207A9 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		A40378782A11A55E00B207A9 /* Plant */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Plant;
-			sourceTree = "<group>";
-		};
 		A403788C2A11AEC100B207A9 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +138,6 @@
 			isa = PBXGroup;
 			children = (
 				A403787B2A11A5BE00B207A9 /* LoginRootView.swift */,
-				A403789F2A1495DC00B207A9 /* AuthenticationError.swift */,
 				A403788E2A11B0DB00B207A9 /* AuthenticationUtil.swift */,
 				A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */,
 				A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */,
@@ -166,6 +151,40 @@
 				A403789C2A148E2100B207A9 /* UserContext.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		A436096F2A171569003107D1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A40378762A11A54D00B207A9 /* Home */,
+				A403788C2A11AEC100B207A9 /* Splash */,
+				A403788D2A11AFD300B207A9 /* Authentication */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A43609712A171585003107D1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A43609722A171590003107D1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A43609732A1715AF003107D1 /* Authentication */,
+				A403789E2A148E2700B207A9 /* User */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A43609732A1715AF003107D1 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				A403789F2A1495DC00B207A9 /* AuthenticationError.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		A46175B02A119CD8006FF607 = {
@@ -192,12 +211,9 @@
 		A46175BB2A119CD8006FF607 /* plant-step-tracker-ios */ = {
 			isa = PBXGroup;
 			children = (
-				A403789E2A148E2700B207A9 /* User */,
-				A403788D2A11AFD300B207A9 /* Authentication */,
-				A403788C2A11AEC100B207A9 /* Splash */,
-				A40378782A11A55E00B207A9 /* Plant */,
-				A40378772A11A55200B207A9 /* Profile */,
-				A40378762A11A54D00B207A9 /* Home */,
+				A43609722A171590003107D1 /* Models */,
+				A43609712A171585003107D1 /* ViewModels */,
+				A436096F2A171569003107D1 /* Views */,
 				A40378732A11A36D00B207A9 /* Styles */,
 				A46175E72A119DEF006FF607 /* MainApp.swift */,
 				A40378712A119FDF00B207A9 /* Globals.swift */,
