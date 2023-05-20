@@ -7,7 +7,7 @@
 
 import Foundation
 
-let APP_NAME = "huā"
+let APP_NAME = "plnt."
 let APP_LOGO_NAME = "leaf"
 
 

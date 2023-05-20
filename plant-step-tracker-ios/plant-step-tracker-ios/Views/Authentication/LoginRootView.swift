@@ -17,6 +17,7 @@ struct LoginRootView: View {
     
     var body: some View {
         VStack{
+            Spacer()
             BrandLogoView()
             HStack {
                 Image(systemName: "mail")
@@ -37,7 +38,7 @@ struct LoginRootView: View {
             }) {
                 Text("Don't have an account?")
             }
-            
+            Spacer()
             Button(action: {
                 Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                     if let loginError = error {
