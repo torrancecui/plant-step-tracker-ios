@@ -25,7 +25,15 @@
 		A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */; };
 		A403789D2A148E2100B207A9 /* UserContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789C2A148E2100B207A9 /* UserContext.swift */; };
 		A40378A02A1495DC00B207A9 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789F2A1495DC00B207A9 /* AuthenticationError.swift */; };
-		A43609752A171BDC003107D1 /* StubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609742A171BDC003107D1 /* StubViewModel.swift */; };
+		A43609782A185925003107D1 /* Plant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609772A185925003107D1 /* Plant.swift */; };
+		A436097A2A1859DD003107D1 /* PlantLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609792A1859DD003107D1 /* PlantLibraryViewModel.swift */; };
+		A436097C2A185F11003107D1 /* PlantLibraryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */; };
+		A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097E2A18640C003107D1 /* HomeMainView.swift */; };
+		A43609812A18646E003107D1 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609802A18646E003107D1 /* HomeHeaderView.swift */; };
+		A43609832A1867BA003107D1 /* SettingsRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609822A1867BA003107D1 /* SettingsRootView.swift */; };
+		A43609862A186874003107D1 /* HomeStepInfoBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609852A186874003107D1 /* HomeStepInfoBarView.swift */; };
+		A43609882A1869CC003107D1 /* PlantLibraryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609872A1869CC003107D1 /* PlantLibraryListView.swift */; };
+		A436098A2A186C1B003107D1 /* PlantLibraryRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609892A186C1B003107D1 /* PlantLibraryRootView.swift */; };
 		A46175C12A119CDA006FF607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C02A119CDA006FF607 /* Assets.xcassets */; };
 		A46175C42A119CDA006FF607 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A46175C32A119CDA006FF607 /* Preview Assets.xcassets */; };
 		A46175CE2A119CDA006FF607 /* plant_step_tracker_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46175CD2A119CDA006FF607 /* plant_step_tracker_iosTests.swift */; };
@@ -66,7 +74,15 @@
 		A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		A403789C2A148E2100B207A9 /* UserContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContext.swift; sourceTree = "<group>"; };
 		A403789F2A1495DC00B207A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
-		A43609742A171BDC003107D1 /* StubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubViewModel.swift; sourceTree = "<group>"; };
+		A43609772A185925003107D1 /* Plant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plant.swift; sourceTree = "<group>"; };
+		A43609792A1859DD003107D1 /* PlantLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryViewModel.swift; sourceTree = "<group>"; };
+		A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryEntryView.swift; sourceTree = "<group>"; };
+		A436097E2A18640C003107D1 /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
+		A43609802A18646E003107D1 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		A43609822A1867BA003107D1 /* SettingsRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRootView.swift; sourceTree = "<group>"; };
+		A43609852A186874003107D1 /* HomeStepInfoBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStepInfoBarView.swift; sourceTree = "<group>"; };
+		A43609872A1869CC003107D1 /* PlantLibraryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryListView.swift; sourceTree = "<group>"; };
+		A43609892A186C1B003107D1 /* PlantLibraryRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryRootView.swift; sourceTree = "<group>"; };
 		A46175B92A119CD8006FF607 /* plant-step-tracker-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "plant-step-tracker-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46175C02A119CDA006FF607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A46175C32A119CDA006FF607 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -124,6 +140,9 @@
 			children = (
 				A40378792A11A5A200B207A9 /* HomeRootView.swift */,
 				A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */,
+				A436097E2A18640C003107D1 /* HomeMainView.swift */,
+				A43609802A18646E003107D1 /* HomeHeaderView.swift */,
+				A43609852A186874003107D1 /* HomeStepInfoBarView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -158,6 +177,8 @@
 		A436096F2A171569003107D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A43609842A1867C0003107D1 /* Settings */,
+				A436097D2A185F15003107D1 /* Plant */,
 				A40378762A11A54D00B207A9 /* Home */,
 				A403788C2A11AEC100B207A9 /* Splash */,
 				A403788D2A11AFD300B207A9 /* Authentication */,
@@ -168,7 +189,7 @@
 		A43609712A171585003107D1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				A43609742A171BDC003107D1 /* StubViewModel.swift */,
+				A43609792A1859DD003107D1 /* PlantLibraryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,6 +197,7 @@
 		A43609722A171590003107D1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A43609762A1858A0003107D1 /* Plant */,
 				A43609732A1715AF003107D1 /* Authentication */,
 				A403789E2A148E2700B207A9 /* User */,
 			);
@@ -188,6 +210,32 @@
 				A403789F2A1495DC00B207A9 /* AuthenticationError.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		A43609762A1858A0003107D1 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				A43609772A185925003107D1 /* Plant.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		A436097D2A185F15003107D1 /* Plant */ = {
+			isa = PBXGroup;
+			children = (
+				A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */,
+				A43609872A1869CC003107D1 /* PlantLibraryListView.swift */,
+				A43609892A186C1B003107D1 /* PlantLibraryRootView.swift */,
+			);
+			path = Plant;
+			sourceTree = "<group>";
+		};
+		A43609842A1867C0003107D1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A43609822A1867BA003107D1 /* SettingsRootView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		A46175B02A119CD8006FF607 = {
@@ -396,17 +444,25 @@
 				A403787C2A11A5BE00B207A9 /* LoginRootView.swift in Sources */,
 				A403787A2A11A5A200B207A9 /* HomeRootView.swift in Sources */,
 				A40378752A11A38500B207A9 /* BrandLogoView.swift in Sources */,
+				A43609882A1869CC003107D1 /* PlantLibraryListView.swift in Sources */,
+				A436098A2A186C1B003107D1 /* PlantLibraryRootView.swift in Sources */,
 				A403789D2A148E2100B207A9 /* UserContext.swift in Sources */,
+				A43609782A185925003107D1 /* Plant.swift in Sources */,
+				A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */,
 				A40378992A11BD3100B207A9 /* HuaButtonStyle.swift in Sources */,
+				A43609812A18646E003107D1 /* HomeHeaderView.swift in Sources */,
 				A46175E82A119DEF006FF607 /* MainApp.swift in Sources */,
 				A40378722A119FDF00B207A9 /* Globals.swift in Sources */,
+				A436097A2A1859DD003107D1 /* PlantLibraryViewModel.swift in Sources */,
 				A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */,
 				A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */,
 				A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */,
 				A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */,
-				A43609752A171BDC003107D1 /* StubViewModel.swift in Sources */,
 				A4DAB3A52A15D00D00D31D85 /* HomePlantOverviewView.swift in Sources */,
+				A43609832A1867BA003107D1 /* SettingsRootView.swift in Sources */,
+				A436097C2A185F11003107D1 /* PlantLibraryEntryView.swift in Sources */,
 				A40378A02A1495DC00B207A9 /* AuthenticationError.swift in Sources */,
+				A43609862A186874003107D1 /* HomeStepInfoBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

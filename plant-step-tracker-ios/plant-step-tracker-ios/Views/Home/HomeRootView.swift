@@ -12,7 +12,7 @@ struct HomeRootView: View {
     
     var body: some View {
         if userContext.isSignedIn {
-            HomePlantOverviewView().environmentObject(userContext)
+            HomeMainView().environmentObject(userContext)
         } else {
             AuthenticationRootView().environmentObject(userContext)
         }
