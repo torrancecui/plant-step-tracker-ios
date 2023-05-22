@@ -11,18 +11,23 @@ struct PlantLibraryRootView: View {
     @Binding var showPlantLibraryView: Bool
     var body: some View {
         VStack{
-            Text("Plant Library").bold()
-            Spacer()
-            PlantLibraryListView()
-            Spacer()
-            Button(action: {
-                withAnimation {
-                    showPlantLibraryView = false
+            ZStack{
+                HStack{
+                    Button(action: {
+                        withAnimation {
+                            showPlantLibraryView = false
+                        }
+                    }) {
+                        Image(systemName: "chevron.backward")
+                            .imageScale(.large)
+                    }
+                    Spacer()
                 }
-            }) {
-                Text("Back")
-            }
+                HStack{
+                    Text("Plant Library").bold()
+                }
+            }.padding(HEADER_PADDING)
+            PlantLibraryListView()
         }
-        
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeRootView: View {
-    @StateObject var userContext = UserContext()
+    @ObservedObject var userContext = UserContext()
     
     var body: some View {
         if userContext.isSignedIn {
@@ -17,6 +17,11 @@ struct HomeRootView: View {
             AuthenticationRootView().environmentObject(userContext)
         }
         
+    }
+    init(){
+        if userContext.isSignedIn {
+            userContext.fetchUserContext()
+        }
     }
 }
 

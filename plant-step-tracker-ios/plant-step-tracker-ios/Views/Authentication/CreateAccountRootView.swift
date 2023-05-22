@@ -59,8 +59,9 @@ struct CreateAccountRootView: View {
                     if let authResult = authResult {
                         withAnimation{
                             userContext.isSignedIn = true
-                            userContext.userID = authResult.user.uid
                         }
+                        userContext.userID = authResult.user.uid
+                        // TODO: Write new UserContext doc into database with userID?
                     }
                 }
             }) {

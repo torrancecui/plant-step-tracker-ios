@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct HomeStepInfoBarView: View {
+    @EnvironmentObject var userContext: UserContext
     var body: some View {
-        Text("HomeStepInfoBarView: TODO")
-    }
-}
-
-struct HomeStepInfoBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeStepInfoBarView()
+        HStack{
+            Spacer()
+            Image(systemName: "shoeprints.fill")
+                .imageScale(.large)
+            VStack{
+                Text("Today").bold()
+                Text("\(userContext.totalStepsDay)")
+            }
+            Spacer()
+            Image(systemName: "figure.walk.circle")
+                .imageScale(.large)
+            VStack{
+                Text("Total").bold()
+                Text("\(userContext.totalStepsLifetime)")
+            }
+            Spacer()
+        }
     }
 }
