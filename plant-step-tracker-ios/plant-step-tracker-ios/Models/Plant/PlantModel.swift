@@ -1,8 +1,8 @@
 //
-//  Plant.swift
+//  PlantModel.swift
 //  plant-step-tracker-ios
 //
-//  Created by Torrance Cui on 5/19/23.
+//  Created by Torrance Cui on 5/20/23.
 //
 
 import Foundation

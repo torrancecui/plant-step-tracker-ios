@@ -18,6 +18,7 @@ struct HomeHeaderView: View {
                 }
             }, label: {
                 Image(systemName: "book.closed")
+                    .imageScale(.large)
             })
             Spacer()
             BrandLogoView()
@@ -28,7 +29,8 @@ struct HomeHeaderView: View {
                 }
             }, label: {
                 Image(systemName: "gearshape.2")
+                    .imageScale(.large)
             })
-        }.padding(10)
+        }.padding(HEADER_PADDING)
     }
 }

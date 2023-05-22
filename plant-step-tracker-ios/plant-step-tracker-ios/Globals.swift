@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import SwiftUI
 
-let APP_NAME = "plnt."
-let APP_LOGO_NAME = "leaf"
+let APP_NAME: String = "plnt."
+let APP_LOGO_NAME: String = "leaf"
+let HEADER_PADDING = EdgeInsets(top: 10, leading: 20, bottom: 10, trailing: 20)
 
 

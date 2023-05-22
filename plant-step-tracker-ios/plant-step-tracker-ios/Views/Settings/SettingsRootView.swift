@@ -14,8 +14,22 @@ struct SettingsRootView: View {
     
     var body: some View {
         VStack{
-            Text("Settings").bold()
-            Spacer()
+            ZStack{
+                HStack{
+                    Button(action: {
+                        withAnimation {
+                            showSettingsView = false
+                        }
+                    }) {
+                        Image(systemName: "chevron.backward")
+                            .imageScale(.large)
+                    }
+                    Spacer()
+                }
+                HStack{
+                    Text("Settings").bold()
+                }
+            }.padding(HEADER_PADDING)
             Form{
                 Button(action: {
                     do {
@@ -29,14 +43,6 @@ struct SettingsRootView: View {
                 }) {
                     Text("Logout").foregroundColor(Color.red)
                 }
-            }
-            Spacer()
-            Button(action: {
-                withAnimation {
-                    showSettingsView = false
-                }
-            }) {
-                Text("Back")
             }
         }
         

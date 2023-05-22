@@ -6,16 +6,12 @@
 //
 
 import SwiftUI
-import FirebaseAuth
 
 struct HomePlantOverviewView: View {
+    @EnvironmentObject var userContext: UserContext
     var body: some View {
-        Text("HomePlantOverviewView: TODO")
-    }
-}
-
-struct HomePlantOverviewView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomePlantOverviewView()
+        List(userContext.ownedPlants){ ownedPlant in
+            Text(ownedPlant.id)
+        }
     }
 }
