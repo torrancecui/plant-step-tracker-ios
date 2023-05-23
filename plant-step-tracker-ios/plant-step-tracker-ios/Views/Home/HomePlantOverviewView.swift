@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HomePlantOverviewView: View {
     @EnvironmentObject var userContext: UserContext
+    @EnvironmentObject var plantLibraryModel: PlantLibraryModel
     var body: some View {
         List(userContext.ownedPlants){ ownedPlant in
-            Text(ownedPlant.id)
+            Text(plantLibraryModel.plantLibrary[ownedPlant.speciesID]?.speciesName ?? "")
         }
     }
 }

@@ -9,10 +9,11 @@ import SwiftUI
 
 struct HomeRootView: View {
     @ObservedObject var userContext = UserContext()
+    @ObservedObject var plantLibraryModel = PlantLibraryModel()
     
     var body: some View {
         if userContext.isSignedIn {
-            HomeMainView().environmentObject(userContext)
+            HomeMainView().environmentObject(userContext).environmentObject(plantLibraryModel)
         } else {
             AuthenticationRootView().environmentObject(userContext)
         }
@@ -21,6 +22,7 @@ struct HomeRootView: View {
     init(){
         if userContext.isSignedIn {
             userContext.fetchUserContext()
+            plantLibraryModel.fetchPlantLibrary()
         }
     }
 }

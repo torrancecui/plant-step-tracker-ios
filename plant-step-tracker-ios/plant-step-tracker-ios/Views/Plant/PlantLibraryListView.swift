@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct PlantLibraryListView: View {
-    @ObservedObject var plantLibraryModel = PlantLibraryModel()
+    @EnvironmentObject var plantLibraryModel: PlantLibraryModel
     var body: some View {
-        List(plantLibraryModel.plantLibrary){ plant in
-            PlantLibraryEntryView(plant: plant)
+        List {
+            ForEach(Array(plantLibraryModel.plantLibrary), id: \.key) { key, plantEntry in
+                PlantLibraryEntryView(plant:plantEntry)
+            }
         }
-    }
-    init(){
-        plantLibraryModel.fetchPlantLibrary()
     }
 }
 
