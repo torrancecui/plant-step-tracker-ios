@@ -22,7 +22,7 @@ struct HomeMainView: View {
             VStack{
                 HomeHeaderView(showPlantLibraryView: $showPlantLibraryView, showSettingsView: $showSettingsView)
                 Spacer()
-                HomePlantOverviewView()
+                PlantOverviewView()
                 Spacer()
                 HomeStepInfoBarView()
             }

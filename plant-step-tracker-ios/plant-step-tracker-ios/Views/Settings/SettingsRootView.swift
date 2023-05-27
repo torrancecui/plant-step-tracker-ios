@@ -23,7 +23,7 @@ struct SettingsRootView: View {
                     }) {
                         Image(systemName: "chevron.backward")
                             .imageScale(.large)
-                    }
+                    }.foregroundColor(.black)
                     Spacer()
                 }
                 HStack{

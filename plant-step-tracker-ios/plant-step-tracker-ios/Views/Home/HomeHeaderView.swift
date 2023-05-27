@@ -19,7 +19,7 @@ struct HomeHeaderView: View {
             }, label: {
                 Image(systemName: "book.closed")
                     .imageScale(.large)
-            })
+            }).foregroundColor(.black)
             Spacer()
             BrandLogoView()
             Spacer()
@@ -30,7 +30,7 @@ struct HomeHeaderView: View {
             }, label: {
                 Image(systemName: "gearshape.2")
                     .imageScale(.large)
-            })
+            }).foregroundColor(.black)
         }.padding(HEADER_PADDING)
     }
 }

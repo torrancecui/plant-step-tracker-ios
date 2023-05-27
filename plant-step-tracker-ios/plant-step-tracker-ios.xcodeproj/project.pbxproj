@@ -40,8 +40,10 @@
 		A46739C42A189CAF00D663A5 /* AuthenticationErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C32A189CAF00D663A5 /* AuthenticationErrorModel.swift */; };
 		A46739C62A189CD900D663A5 /* UserContextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C52A189CD900D663A5 /* UserContextModel.swift */; };
 		A46739C82A1B283900D663A5 /* OwnedPlantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C72A1B283900D663A5 /* OwnedPlantModel.swift */; };
-		A46739CA2A1C7EC000D663A5 /* HomePlantOverviewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C92A1C7EC000D663A5 /* HomePlantOverviewEntryView.swift */; };
-		A4DAB3A52A15D00D00D31D85 /* HomePlantOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */; };
+		A46739CA2A1C7EC000D663A5 /* PlantOverviewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C92A1C7EC000D663A5 /* PlantOverviewEntryView.swift */; };
+		A46739CC2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739CB2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift */; };
+		A46739D02A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739CF2A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift */; };
+		A4DAB3A52A15D00D00D31D85 /* PlantOverviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DAB3A42A15D00D00D31D85 /* PlantOverviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +95,10 @@
 		A46739C32A189CAF00D663A5 /* AuthenticationErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationErrorModel.swift; sourceTree = "<group>"; };
 		A46739C52A189CD900D663A5 /* UserContextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContextModel.swift; sourceTree = "<group>"; };
 		A46739C72A1B283900D663A5 /* OwnedPlantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnedPlantModel.swift; sourceTree = "<group>"; };
-		A46739C92A1C7EC000D663A5 /* HomePlantOverviewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlantOverviewEntryView.swift; sourceTree = "<group>"; };
-		A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePlantOverviewView.swift; sourceTree = "<group>"; };
+		A46739C92A1C7EC000D663A5 /* PlantOverviewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewEntryView.swift; sourceTree = "<group>"; };
+		A46739CB2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewPlantDetailsView.swift; sourceTree = "<group>"; };
+		A46739CF2A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewPlantDetailsProgressBarView.swift; sourceTree = "<group>"; };
+		A4DAB3A42A15D00D00D31D85 /* PlantOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,8 +143,8 @@
 		A40378762A11A54D00B207A9 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A46739CD2A22953400D663A5 /* PlantOverview */,
 				A40378792A11A5A200B207A9 /* HomeRootView.swift */,
-				A4DAB3A42A15D00D00D31D85 /* HomePlantOverviewView.swift */,
 				A436097E2A18640C003107D1 /* HomeMainView.swift */,
 				A43609802A18646E003107D1 /* HomeHeaderView.swift */,
 				A43609852A186874003107D1 /* HomeStepInfoBarView.swift */,
@@ -178,8 +182,8 @@
 		A436096F2A171569003107D1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A46739CE2A22954B00D663A5 /* PlantLibrary */,
 				A43609842A1867C0003107D1 /* Settings */,
-				A436097D2A185F15003107D1 /* Plant */,
 				A40378762A11A54D00B207A9 /* Home */,
 				A403788C2A11AEC100B207A9 /* Splash */,
 				A403788D2A11AFD300B207A9 /* Authentication */,
@@ -211,17 +215,6 @@
 				A46739C12A189C6F00D663A5 /* PlantModel.swift */,
 				A46739BF2A189C5900D663A5 /* PlantLibraryModel.swift */,
 				A46739C72A1B283900D663A5 /* OwnedPlantModel.swift */,
-			);
-			path = Plant;
-			sourceTree = "<group>";
-		};
-		A436097D2A185F15003107D1 /* Plant */ = {
-			isa = PBXGroup;
-			children = (
-				A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */,
-				A43609872A1869CC003107D1 /* PlantLibraryListView.swift */,
-				A43609892A186C1B003107D1 /* PlantLibraryRootView.swift */,
-				A46739C92A1C7EC000D663A5 /* HomePlantOverviewEntryView.swift */,
 			);
 			path = Plant;
 			sourceTree = "<group>";
@@ -292,6 +285,27 @@
 				A46175D92A119CDA006FF607 /* plant_step_tracker_iosUITestsLaunchTests.swift */,
 			);
 			path = "plant-step-tracker-iosUITests";
+			sourceTree = "<group>";
+		};
+		A46739CD2A22953400D663A5 /* PlantOverview */ = {
+			isa = PBXGroup;
+			children = (
+				A46739C92A1C7EC000D663A5 /* PlantOverviewEntryView.swift */,
+				A46739CF2A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift */,
+				A46739CB2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift */,
+				A4DAB3A42A15D00D00D31D85 /* PlantOverviewView.swift */,
+			);
+			path = PlantOverview;
+			sourceTree = "<group>";
+		};
+		A46739CE2A22954B00D663A5 /* PlantLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */,
+				A43609872A1869CC003107D1 /* PlantLibraryListView.swift */,
+				A43609892A186C1B003107D1 /* PlantLibraryRootView.swift */,
+			);
+			path = PlantLibrary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,18 +456,20 @@
 				A43609882A1869CC003107D1 /* PlantLibraryListView.swift in Sources */,
 				A46739C82A1B283900D663A5 /* OwnedPlantModel.swift in Sources */,
 				A436098A2A186C1B003107D1 /* PlantLibraryRootView.swift in Sources */,
+				A46739CC2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift in Sources */,
 				A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */,
+				A46739D02A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift in Sources */,
 				A43609812A18646E003107D1 /* HomeHeaderView.swift in Sources */,
 				A46175E82A119DEF006FF607 /* MainApp.swift in Sources */,
 				A46739C42A189CAF00D663A5 /* AuthenticationErrorModel.swift in Sources */,
 				A46739C02A189C5900D663A5 /* PlantLibraryModel.swift in Sources */,
 				A40378722A119FDF00B207A9 /* Globals.swift in Sources */,
 				A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */,
-				A46739CA2A1C7EC000D663A5 /* HomePlantOverviewEntryView.swift in Sources */,
+				A46739CA2A1C7EC000D663A5 /* PlantOverviewEntryView.swift in Sources */,
 				A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */,
 				A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */,
 				A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */,
-				A4DAB3A52A15D00D00D31D85 /* HomePlantOverviewView.swift in Sources */,
+				A4DAB3A52A15D00D00D31D85 /* PlantOverviewView.swift in Sources */,
 				A43609832A1867BA003107D1 /* SettingsRootView.swift in Sources */,
 				A436097C2A185F11003107D1 /* PlantLibraryEntryView.swift in Sources */,
 				A43609862A186874003107D1 /* HomeStepInfoBarView.swift in Sources */,
