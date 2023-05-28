@@ -29,7 +29,6 @@ struct CreateAccountRootView: View {
                         .foregroundColor(email.isValidEmail() ? .green : .red)
                 }
             }.applyAuthTextFieldTheme()
-            
             HStack {
                 Image(systemName: "lock")
                 SecureField("Password", text: $password).autocapitalization(.none)
@@ -40,15 +39,6 @@ struct CreateAccountRootView: View {
                         .foregroundColor(isValidPassword(password) ? .green : .red)
                 }
             }.applyAuthTextFieldTheme()
-            
-            Button(action: {
-                withAnimation {
-                    self.currentAuthView = "LOGIN"
-                }
-            }) {
-                Text("Already have an account?")
-            }
-            Spacer()
             Button(action: {
                 Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                     if let createUserError = error {
@@ -67,10 +57,18 @@ struct CreateAccountRootView: View {
                     }
                 }
             }) {
-                Text("Create account")
+                Text("Create")
             }.alert(authenticationError.errorMessage, isPresented: $authenticationError.showAlert) {
                 Button("OK", role: .cancel) { }
-            }
+            }.buttonStyle(AuthButtonStyle(isCreateAccount: true)).padding()
+            Spacer()
+            Button(action: {
+                withAnimation {
+                    self.currentAuthView = "LOGIN"
+                }
+            }) {
+                Text("Already have an account?").font(.footnote)
+            }.padding()
         }
     }
     

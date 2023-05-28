@@ -30,15 +30,6 @@ struct LoginRootView: View {
                 SecureField("Password", text: $password).autocapitalization(.none)
                 Spacer()
             }.applyAuthTextFieldTheme()
-            
-            Button(action: {
-                withAnimation {
-                    self.currentAuthView = "CREATE_ACCOUNT"
-                }
-            }) {
-                Text("Don't have an account?")
-            }
-            Spacer()
             Button(action: {
                 Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
                     if let loginError = error {
@@ -59,7 +50,15 @@ struct LoginRootView: View {
                 Text("Sign in")
             }.alert(authenticationError.errorMessage, isPresented: $authenticationError.showAlert) {
                 Button("OK", role: .cancel) { }
-            }
+            }.buttonStyle(AuthButtonStyle()).padding()
+            Spacer()
+            Button(action: {
+                withAnimation {
+                    self.currentAuthView = "CREATE_ACCOUNT"
+                }
+            }) {
+                Text("Don't have an account?").font(.footnote)
+            }.padding()
         }
     }
 }
