@@ -20,9 +20,10 @@
 		A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403788A2A11AEB700B207A9 /* SplashRootView.swift */; };
 		A403788F2A11B0DB00B207A9 /* AuthenticationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403788E2A11B0DB00B207A9 /* AuthenticationUtil.swift */; };
 		A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */; };
-		A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378942A11B63700B207A9 /* HStackAuthStyle.swift */; };
+		A40378952A11B63700B207A9 /* AuthTextfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378942A11B63700B207A9 /* AuthTextfieldStyle.swift */; };
 		A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */; };
 		A429FA4F2A23261300BA7E8F /* GuideRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A429FA4E2A23261300BA7E8F /* GuideRootView.swift */; };
+		A429FA512A23FFA400BA7E8F /* AuthButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A429FA502A23FFA400BA7E8F /* AuthButtonStyle.swift */; };
 		A436097C2A185F11003107D1 /* PlantLibraryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */; };
 		A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097E2A18640C003107D1 /* HomeMainView.swift */; };
 		A43609812A18646E003107D1 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609802A18646E003107D1 /* HomeHeaderView.swift */; };
@@ -76,9 +77,10 @@
 		A403788A2A11AEB700B207A9 /* SplashRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashRootView.swift; sourceTree = "<group>"; };
 		A403788E2A11B0DB00B207A9 /* AuthenticationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUtil.swift; sourceTree = "<group>"; };
 		A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRootView.swift; sourceTree = "<group>"; };
-		A40378942A11B63700B207A9 /* HStackAuthStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackAuthStyle.swift; sourceTree = "<group>"; };
+		A40378942A11B63700B207A9 /* AuthTextfieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTextfieldStyle.swift; sourceTree = "<group>"; };
 		A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
 		A429FA4E2A23261300BA7E8F /* GuideRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRootView.swift; sourceTree = "<group>"; };
+		A429FA502A23FFA400BA7E8F /* AuthButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButtonStyle.swift; sourceTree = "<group>"; };
 		A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryEntryView.swift; sourceTree = "<group>"; };
 		A436097E2A18640C003107D1 /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
 		A43609802A18646E003107D1 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
@@ -143,7 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				A40378742A11A38500B207A9 /* BrandLogoView.swift */,
-				A40378942A11B63700B207A9 /* HStackAuthStyle.swift */,
+				A429FA502A23FFA400BA7E8F /* AuthButtonStyle.swift */,
+				A40378942A11B63700B207A9 /* AuthTextfieldStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				A46739C82A1B283900D663A5 /* OwnedPlantModel.swift in Sources */,
 				A429FA4F2A23261300BA7E8F /* GuideRootView.swift in Sources */,
 				A436098A2A186C1B003107D1 /* PlantLibraryRootView.swift in Sources */,
+				A429FA512A23FFA400BA7E8F /* AuthButtonStyle.swift in Sources */,
 				A46739CC2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift in Sources */,
 				A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */,
 				A46739D02A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift in Sources */,
@@ -489,7 +493,7 @@
 				A40378722A119FDF00B207A9 /* Globals.swift in Sources */,
 				A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */,
 				A46739CA2A1C7EC000D663A5 /* PlantOverviewEntryView.swift in Sources */,
-				A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */,
+				A40378952A11B63700B207A9 /* AuthTextfieldStyle.swift in Sources */,
 				A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */,
 				A403788B2A11AEB700B207A9 /* SplashRootView.swift in Sources */,
 				A4DAB3A52A15D00D00D31D85 /* PlantOverviewView.swift in Sources */,

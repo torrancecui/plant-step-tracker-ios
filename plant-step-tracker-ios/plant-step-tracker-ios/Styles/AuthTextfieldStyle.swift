@@ -1,10 +1,10 @@
 //
-//  HStackAuthStyle.swift
+//  AuthTextfieldStyle.swift
 //  plant-step-tracker-ios
 //
 //  Created by Torrance Cui on 5/14/23.
 //
-
+    
 import SwiftUI
 
 extension HStack {

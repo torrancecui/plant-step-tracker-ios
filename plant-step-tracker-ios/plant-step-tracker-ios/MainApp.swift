@@ -13,7 +13,10 @@ struct MainApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            SplashRootView()
+            ZStack{
+                PRIMARY_BACKGROUND_COLOR.ignoresSafeArea()
+                SplashRootView()
+            }
         }
     }
 }
