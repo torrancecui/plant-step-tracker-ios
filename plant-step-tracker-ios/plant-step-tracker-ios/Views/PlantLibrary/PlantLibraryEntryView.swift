@@ -12,7 +12,7 @@ struct PlantLibraryEntryView: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(plant.speciesName).bold()
-            Text("Steps to water: \(plant.dailyStepsToWater)")
+            Text("Daily steps to water: \(plant.dailyStepsToWater)")
             Text("Total steps to unlock: \(plant.totalStepsToUnlock)")
         }
     }

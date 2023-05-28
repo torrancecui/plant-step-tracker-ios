@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct HomePlantOverviewView: View {
+struct PlantOverviewView: View {
     @EnvironmentObject var userContext: UserContext
     var body: some View {
         List(userContext.ownedPlants){ ownedPlant in
-            Text(ownedPlant.id)
+            PlantOverviewEntryView().environmentObject(ownedPlant)
         }
     }
 }

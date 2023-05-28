@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Firebase
 
 func isValidPassword(_ password: String) -> Bool {
     
@@ -17,7 +18,7 @@ func isValidPassword(_ password: String) -> Bool {
     // let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
     // return passwordRegex.evaluate(with: password)
     
-    return true
+    return password.count >= 6
 }
 
 extension String {
@@ -26,4 +27,36 @@ extension String {
         
         return regex.firstMatch(in: self, range: NSRange(location: 0, length: count)) != nil
     }
+}
+
+func createNewUser(userID: String) -> Void {
+    let newUserData: [String: Any] = [
+        "SHOW_ONBOARDING_FLOW": true,
+        "TOTAL_STEPS_DAY": 0,
+        "TOTAL_STEPS_LIFETIME": 0,
+    ]
+    Firestore.firestore().collection("USERS").document(userID).setData(newUserData) { error in
+        if let error = error {
+            print("Error creating new user: \(error)")
+        } else {
+            print("New user successfully written.")
+        }
+    }
+    
+    //TODO: implement first plant species logic here
+    let firstPlantSpeciesID: String  = "cEcaDVvoApwmTh1cc4ci"
+    
+    let firstPlantData: [String: Any] = [
+        "IS_WATERED": false,
+        "NICKNAME": "First Plant",
+        "SPECIES_ID": firstPlantSpeciesID,
+    ]
+    Firestore.firestore().collection("USERS").document(userID)
+        .collection("OWNED_PLANTS").document().setData(firstPlantData){ error in
+            if let error = error {
+                print("Error adding plant collection: \(error)")
+            } else {
+                print("New plant collection added.")
+            }
+        }
 }

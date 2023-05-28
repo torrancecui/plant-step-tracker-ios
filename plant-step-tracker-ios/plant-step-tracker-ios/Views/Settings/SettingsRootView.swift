@@ -23,7 +23,7 @@ struct SettingsRootView: View {
                     }) {
                         Image(systemName: "chevron.backward")
                             .imageScale(.large)
-                    }
+                    }.foregroundColor(.black)
                     Spacer()
                 }
                 HStack{
@@ -36,7 +36,9 @@ struct SettingsRootView: View {
                         try Auth.auth().signOut()
                         withAnimation{
                             userContext.isSignedIn = false;
+                            userContext.userID = "";
                         }
+                        print("User logged out.")
                     } catch let signOutError as NSError {
                         print("Error signing out: %@", signOutError)
                     }

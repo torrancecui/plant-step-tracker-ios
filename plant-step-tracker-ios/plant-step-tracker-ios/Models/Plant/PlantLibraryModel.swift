@@ -9,15 +9,15 @@ import Foundation
 import Firebase
 
 class PlantLibraryModel: ObservableObject {
-    @Published var plantLibrary = [Plant]()
+    @Published var plantLibrary = [String:Plant]()
     
     func fetchPlantLibrary() {
         Firestore.firestore().collection("PLANTS_LIBRARY").getDocuments { query, error in
             if (error == nil) {
                 if let query = query {
                     DispatchQueue.main.async {
-                        self.plantLibrary = query.documents.map { doc in
-                            return Plant(
+                        for doc in query.documents {
+                            self.plantLibrary[doc.documentID] = Plant(
                                 id: doc.documentID,
                                 speciesName: doc["SPECIES_NAME"] as? String ?? "",
                                 dailyStepsToWater: doc["DAILY_STEPS_TO_WATER"] as? Int ?? -1,
@@ -25,8 +25,8 @@ class PlantLibraryModel: ObservableObject {
                             )
                         }
                     }
-                    
                 }
+                print("Plant Library fetched.")
             } else {
                 print("Error fetching plant library.")
             }
