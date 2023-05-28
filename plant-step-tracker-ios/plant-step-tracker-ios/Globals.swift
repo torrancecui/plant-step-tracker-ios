@@ -13,5 +13,6 @@ let APP_LOGO_NAME: String = "leaf"
 let HEADER_PADDING = EdgeInsets(top: 5, leading: 20, bottom: 5, trailing: 20)
 let PLANT_DETAILS_PADDING = EdgeInsets(top: 30, leading: 20, bottom: 30, trailing: 20)
 let PROGRESS_BAR_PADDING = EdgeInsets(top: 0, leading: 40, bottom: 0, trailing: 40)
+let ONBOARDING_GUIDE_PADDING = EdgeInsets(top: 50, leading: 50, bottom: 50, trailing: 50)
 
 

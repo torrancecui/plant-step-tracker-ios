@@ -22,6 +22,7 @@
 		A40378912A11B1D800B207A9 /* CreateAccountRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */; };
 		A40378952A11B63700B207A9 /* HStackAuthStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A40378942A11B63700B207A9 /* HStackAuthStyle.swift */; };
 		A403789B2A146E7F00B207A9 /* AuthenticationRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */; };
+		A429FA4F2A23261300BA7E8F /* GuideRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A429FA4E2A23261300BA7E8F /* GuideRootView.swift */; };
 		A436097C2A185F11003107D1 /* PlantLibraryEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */; };
 		A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436097E2A18640C003107D1 /* HomeMainView.swift */; };
 		A43609812A18646E003107D1 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43609802A18646E003107D1 /* HomeHeaderView.swift */; };
@@ -43,7 +44,6 @@
 		A46739CA2A1C7EC000D663A5 /* PlantOverviewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739C92A1C7EC000D663A5 /* PlantOverviewEntryView.swift */; };
 		A46739CC2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739CB2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift */; };
 		A46739D02A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46739CF2A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift */; };
-		A4C788C62A22FF4C006BC01B /* GuideRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C788C52A22FF4C006BC01B /* GuideRootView.swift */; };
 		A4C788C82A23011C006BC01B /* GuideIntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C788C72A23011C006BC01B /* GuideIntroductionView.swift */; };
 		A4C788CA2A23012D006BC01B /* GuideInstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C788C92A23012D006BC01B /* GuideInstructionsView.swift */; };
 		A4C788CC2A23013F006BC01B /* GuideGetStartedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C788CB2A23013F006BC01B /* GuideGetStartedView.swift */; };
@@ -78,6 +78,7 @@
 		A40378902A11B1D800B207A9 /* CreateAccountRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountRootView.swift; sourceTree = "<group>"; };
 		A40378942A11B63700B207A9 /* HStackAuthStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackAuthStyle.swift; sourceTree = "<group>"; };
 		A403789A2A146E7F00B207A9 /* AuthenticationRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRootView.swift; sourceTree = "<group>"; };
+		A429FA4E2A23261300BA7E8F /* GuideRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRootView.swift; sourceTree = "<group>"; };
 		A436097B2A185F11003107D1 /* PlantLibraryEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantLibraryEntryView.swift; sourceTree = "<group>"; };
 		A436097E2A18640C003107D1 /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
 		A43609802A18646E003107D1 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		A46739C92A1C7EC000D663A5 /* PlantOverviewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewEntryView.swift; sourceTree = "<group>"; };
 		A46739CB2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewPlantDetailsView.swift; sourceTree = "<group>"; };
 		A46739CF2A22960400D663A5 /* PlantOverviewPlantDetailsProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantOverviewPlantDetailsProgressBarView.swift; sourceTree = "<group>"; };
-		A4C788C52A22FF4C006BC01B /* GuideRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideRootView.swift; sourceTree = "<group>"; };
 		A4C788C72A23011C006BC01B /* GuideIntroductionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideIntroductionView.swift; sourceTree = "<group>"; };
 		A4C788C92A23012D006BC01B /* GuideInstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideInstructionsView.swift; sourceTree = "<group>"; };
 		A4C788CB2A23013F006BC01B /* GuideGetStartedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideGetStartedView.swift; sourceTree = "<group>"; };
@@ -320,7 +320,7 @@
 		A4C788C42A22F877006BC01B /* Guide */ = {
 			isa = PBXGroup;
 			children = (
-				A4C788C52A22FF4C006BC01B /* GuideRootView.swift */,
+				A429FA4E2A23261300BA7E8F /* GuideRootView.swift */,
 				A4C788C72A23011C006BC01B /* GuideIntroductionView.swift */,
 				A4C788C92A23012D006BC01B /* GuideInstructionsView.swift */,
 				A4C788CB2A23013F006BC01B /* GuideGetStartedView.swift */,
@@ -469,7 +469,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4C788C62A22FF4C006BC01B /* GuideRootView.swift in Sources */,
 				A4C788C82A23011C006BC01B /* GuideIntroductionView.swift in Sources */,
 				A403788F2A11B0DB00B207A9 /* AuthenticationUtil.swift in Sources */,
 				A403787C2A11A5BE00B207A9 /* LoginRootView.swift in Sources */,
@@ -477,6 +476,7 @@
 				A40378752A11A38500B207A9 /* BrandLogoView.swift in Sources */,
 				A43609882A1869CC003107D1 /* PlantLibraryListView.swift in Sources */,
 				A46739C82A1B283900D663A5 /* OwnedPlantModel.swift in Sources */,
+				A429FA4F2A23261300BA7E8F /* GuideRootView.swift in Sources */,
 				A436098A2A186C1B003107D1 /* PlantLibraryRootView.swift in Sources */,
 				A46739CC2A228C5F00D663A5 /* PlantOverviewPlantDetailsView.swift in Sources */,
 				A436097F2A18640C003107D1 /* HomeMainView.swift in Sources */,
