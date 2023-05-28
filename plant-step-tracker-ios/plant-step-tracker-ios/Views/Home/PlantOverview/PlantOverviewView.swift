@@ -11,7 +11,7 @@ struct PlantOverviewView: View {
     @EnvironmentObject var userContext: UserContext
     var body: some View {
         List(userContext.ownedPlants){ ownedPlant in
-            PlantOverviewEntryView(ownedPlant: ownedPlant)
+            PlantOverviewEntryView().environmentObject(ownedPlant)
         }
     }
 }

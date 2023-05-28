@@ -14,7 +14,9 @@ struct HomeMainView: View {
     @State var showSettingsView: Bool = false
     
     var body: some View {
-        if (showPlantLibraryView){
+        if (userContext.showOnboardingFlow){
+            GuideRootView()
+        }else if (showPlantLibraryView){
             PlantLibraryRootView(showPlantLibraryView: $showPlantLibraryView)
         }else if (showSettingsView){
             SettingsRootView(showSettingsView: $showSettingsView)

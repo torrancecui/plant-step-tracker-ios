@@ -26,6 +26,7 @@ class PlantLibraryModel: ObservableObject {
                         }
                     }
                 }
+                print("Plant Library fetched.")
             } else {
                 print("Error fetching plant library.")
             }

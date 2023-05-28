@@ -17,13 +17,9 @@ struct HomeRootView: View {
         } else {
             AuthenticationRootView().environmentObject(userContext)
         }
-        
     }
     init(){
-        if userContext.isSignedIn {
-            userContext.fetchUserContext()
-            plantLibraryModel.fetchPlantLibrary()
-        }
+       plantLibraryModel.fetchPlantLibrary()
     }
 }
 

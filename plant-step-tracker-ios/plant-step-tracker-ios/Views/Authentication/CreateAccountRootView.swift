@@ -57,11 +57,13 @@ struct CreateAccountRootView: View {
                         return
                     }
                     if let authResult = authResult {
+                        createNewUser(userID: authResult.user.uid)
                         withAnimation{
                             userContext.isSignedIn = true
+                            userContext.userID = authResult.user.uid
+                            userContext.fetchUserContext()
                         }
-                        userContext.userID = authResult.user.uid
-                        // TODO: Write new UserContext doc into database with userID?
+                        
                     }
                 }
             }) {

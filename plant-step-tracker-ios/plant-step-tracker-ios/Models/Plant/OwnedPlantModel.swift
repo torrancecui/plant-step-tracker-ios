@@ -6,13 +6,37 @@
 //
 
 import Foundation
+import Firebase
 
-struct OwnedPlant: Identifiable {
-    var id: String
+class OwnedPlant: Identifiable, ObservableObject {
+    @Published var id: String = ""
+    private var ownerID: String = ""
     // maps to doc ID of species in Plant Library
-    var speciesID: String
-    var nickname: String
-    var isWatered: Bool
+    @Published var speciesID: String = ""
+    @Published var nickname: String = ""
+    @Published var isWatered: Bool = false
+    
+    init(id: String, ownerID: String, speciesID: String, nickname: String, isWatered: Bool) {
+        self.id = id
+        self.ownerID = ownerID
+        self.speciesID = speciesID
+        self.nickname = nickname
+        self.isWatered = isWatered
+    }
+    
+    func setNickname(newNickname: String) -> Void {
+        DispatchQueue.main.async {
+            self.nickname = newNickname
+            Firestore.firestore().collection("USERS").document(self.ownerID).collection("OWNED_PLANTS")
+                .document(self.id).updateData(["NICKNAME": newNickname]) { error in
+                    if let error = error {
+                        print("Error updating nickname: \(error)")
+                    }else{
+                        print("Nickname updated.")
+                    }
+                }
+        }
+    }
     
     // TODO: optimize by creating and setting member variables instead of fetching each time
     // it's a dictionary so still O(1), so does it really matter?

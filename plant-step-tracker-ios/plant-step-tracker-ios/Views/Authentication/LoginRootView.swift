@@ -49,8 +49,10 @@ struct LoginRootView: View {
                     if let authResult = authResult {
                         withAnimation{
                             userContext.isSignedIn = true
+                            userContext.userID = authResult.user.uid
+                            userContext.fetchUserContext()
                         }
-                        userContext.userID = authResult.user.uid
+                        print("User logged in.")
                     }
                 }
             }) {

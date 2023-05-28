@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PlantOverviewPlantDetailsProgressBarView: View {
     @EnvironmentObject var plantLibraryModel: PlantLibraryModel
-    var ownedPlant: OwnedPlant
+    @EnvironmentObject var ownedPlant: OwnedPlant
     
     //TODO: get current steps
     var currentSteps = 500;
@@ -25,7 +25,6 @@ struct PlantOverviewPlantDetailsProgressBarView: View {
                     .fontWeight(.bold)
                     .foregroundColor(ownedPlant.isWatered ? .blue : .gray)
             }
-            
         }.padding(PROGRESS_BAR_PADDING)
     }
 }

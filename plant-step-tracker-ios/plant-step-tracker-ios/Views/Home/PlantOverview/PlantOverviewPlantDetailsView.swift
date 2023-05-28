@@ -9,18 +9,21 @@ import SwiftUI
 
 struct PlantOverviewPlantDetailsView: View {
     @EnvironmentObject var plantLibraryModel: PlantLibraryModel
-    var ownedPlant: OwnedPlant
+    @EnvironmentObject var ownedPlant: OwnedPlant
+    @State public var plantNickname: String
     
     var body: some View {
         VStack{
-            Text(ownedPlant.nickname).font(.largeTitle).bold()
+            TextField(ownedPlant.nickname, text: $plantNickname).autocapitalization(.none).font(.largeTitle).bold().onSubmit {
+                ownedPlant.setNickname(newNickname: plantNickname);
+            }.multilineTextAlignment(.center)
             Text(ownedPlant.getSpeciesName(plantLibraryModel: plantLibraryModel)).italic()
             Spacer()
             Image(systemName: APP_LOGO_NAME).resizable()
                 .scaledToFit()
                 .frame(width: 60, height: 60)
             Spacer()
-            PlantOverviewPlantDetailsProgressBarView(ownedPlant: ownedPlant).padding()
+            PlantOverviewPlantDetailsProgressBarView().padding()
         }.padding(PLANT_DETAILS_PADDING)
     }
 }
